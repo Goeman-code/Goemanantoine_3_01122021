@@ -1,0 +1,139 @@
+.image {
+    &__1 {
+        background: no-repeat url("./images/La\ palette\ du\ goût\ croped.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    &__2 {
+        background: no-repeat url("./images/La\ note\ enchantée\ croped.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    &__3 {
+        background: no-repeat url("./images/A\ la\ française\ croped.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    &__4 {
+        background: no-repeat url("./images/Le\ délice\ des\ sens\ croped.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.restaurants__titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    margin-top: 80px;
+    background-color: $color-fond-générale;
+}
+#restaurants__fond__titre {
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+
+.restaurants__fond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: $color-fond-générale;
+    width: 100%;
+        &__boite {
+            display: flex;
+            position: relative;
+            width: 85%;
+            max-width: 349px;
+            height: 275px;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-top: 35px;
+            border-radius: 18px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            transform: scale(1);
+            transition: all 350ms ease-in-out;
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                    transform: scale(1.05);
+                }
+            &__nouveau {
+                position: absolute;
+                top: 0;
+                right: 10px;
+                padding: 6px;
+                max-height: 15px;
+                border-radius: 2px;
+                color: rgb(0, 94, 0);
+                background-color: $couleur-tertiaire;
+                margin-top: 10px;
+                    &--texte {
+                        margin-top: 1px;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        font-size: 0.8rem;
+                    }
+            }
+                &__description {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 27%;
+                    width: 100%;
+                    background-color: white;
+                    border-bottom-left-radius: 18px;
+                    border-bottom-right-radius: 18px;
+                        &__texte {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            font-size: 1rem;
+                            margin-left: 15px;
+                                &--nom {
+                                    margin-top: 15px;
+                                    margin-bottom: 0px;
+                                }
+                                &--position {
+                                    margin-top: 6px;
+                                    margin-bottom: 0px;
+                                    font-weight: 300;
+                                }
+                        }
+                        &--icone {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            width: 25%;
+                            height: 100%;
+                            font-size: 1.5rem;
+                            z-index: 1;
+                            background-image: linear-gradient(350deg, $couleur-primaire 20%, $couleur-secondaire 60%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            color: transparent;
+                            opacity: 1;
+                            transition: opacity 250ms;
+                            &--deux {
+                                position: absolute;
+                                z-index: 2;
+                                opacity: 1;
+                                color: $color-icone-header;
+                                background-color: $color-blanc;
+                                transition: opacity 250ms;
+                                    &:hover {
+                                        opacity: 0;
+                                    }
+                            }
+                        }
+                }
+        }
+}

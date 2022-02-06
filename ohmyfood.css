@@ -1,0 +1,909 @@
+@charset "UTF-8";
+.chargement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  -webkit-animation: fondu 300ms 2200ms both;
+          animation: fondu 300ms 2200ms both;
+  z-index: -1;
+}
+
+.chargement .chargement__icone {
+  position: fixed;
+  font-size: 10rem;
+  -webkit-animation: icone-chargement 2050ms 200ms both infinite cubic-bezier(0.51, 0.21, 0, 1.02) alternate;
+          animation: icone-chargement 2050ms 200ms both infinite cubic-bezier(0.51, 0.21, 0, 1.02) alternate;
+  pointer-events: none;
+}
+
+.opacité {
+  -webkit-animation: body 300ms 2300ms both;
+          animation: body 300ms 2300ms both;
+}
+
+@-webkit-keyframes icone-chargement {
+  0% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+    color: black;
+  }
+  30% {
+    color: #FF79DA;
+  }
+  60% {
+    color: #99E2D0;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    color: #9256dc;
+  }
+}
+
+@keyframes icone-chargement {
+  0% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+    color: black;
+  }
+  30% {
+    color: #FF79DA;
+  }
+  60% {
+    color: #99E2D0;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+    color: #9256dc;
+  }
+}
+
+@-webkit-keyframes fondu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p, h2, h3, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1rem;
+  pointer-events: none;
+  margin-bottom: 8px;
+}
+
+.logo .logo__page {
+  height: 50px;
+}
+
+.position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #ebebeb;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 3px 0px inset;
+}
+
+.position__texte {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3f3f3f;
+  pointer-events: none;
+}
+
+.position__logo {
+  font-size: 1.1rem;
+  margin-left: -28px;
+  color: #3f3f3f;
+  pointer-events: none;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  padding: 28px;
+  background-color: #f3f3f3;
+}
+
+.introduction__texte {
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.introduction__sous-texte {
+  font-size: 1rem;
+  color: #3f3f3f;
+}
+
+.introduction__bouton {
+  width: 176px;
+  height: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+  color: white;
+  background-image: linear-gradient(350deg, #9256dc 20%, #FF79DA 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  position: relative;
+  z-index: 1;
+}
+
+.introduction__bouton:hover .introduction__bouton__fond {
+  opacity: 1;
+}
+
+.introduction__bouton__fond {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(350deg, #9256dc 10%, #FF79DA 80%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.introduction__bouton__texte {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.fonctionnement__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  max-width: 378px;
+  min-width: 296px;
+  margin-bottom: -15px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.fonctionnement__boite {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f3f3f3;
+  padding: 0px 20px 0px 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 300px;
+  min-width: 250px;
+  height: 75px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.fonctionnement__boite:hover .fonctionnement__boite__violet {
+  opacity: 0.15;
+}
+
+.fonctionnement__boite:hover .fonctionnement__boite__icone {
+  color: #9256dc;
+}
+
+.fonctionnement__boite__violet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #9256dc;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.fonctionnement__boite__chiffre {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #9256dc;
+  padding: 4px 9px 4px 9px;
+  margin-left: -30px;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+
+.fonctionnement__boite__icone {
+  margin-top: 24px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  color: #3f3f3f;
+  z-index: 2;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.fonctionnement__boite__texte {
+  margin-left: 20px;
+  margin-top: 26px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.image__1 {
+  background: no-repeat url("./images/La palette du goût croped.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image__2 {
+  background: no-repeat url("./images/La note enchantée croped.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image__3 {
+  background: no-repeat url("./images/A la française croped.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image__4 {
+  background: no-repeat url("./images/Le délice des sens croped.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurants__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75px;
+  margin-top: 80px;
+  background-color: #f3f3f3;
+}
+
+#restaurants__fond__titre {
+  margin-bottom: -20px;
+  margin-top: 0px;
+}
+
+.restaurants__fond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+.restaurants__fond__boite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 85%;
+  max-width: 349px;
+  height: 275px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 35px;
+  border-radius: 18px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.restaurants__fond__boite:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.restaurants__fond__boite__nouveau {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 6px;
+  max-height: 15px;
+  border-radius: 2px;
+  color: #005e00;
+  background-color: #99E2D0;
+  margin-top: 10px;
+}
+
+.restaurants__fond__boite__nouveau--texte {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.restaurants__fond__boite__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 27%;
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.restaurants__fond__boite__description__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+.restaurants__fond__boite__description__texte--nom {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.restaurants__fond__boite__description__texte--position {
+  margin-top: 6px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.restaurants__fond__boite__description--icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  font-size: 1.5rem;
+  z-index: 1;
+  background-image: linear-gradient(350deg, #9256dc 20%, #FF79DA 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.restaurants__fond__boite__description--icone--deux {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  color: #3f3f3f;
+  background-color: #fff;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.restaurants__fond__boite__description--icone--deux:hover {
+  opacity: 0;
+}
+
+.footer__fond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3f3f3f;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.footer__fond #footer__fond__titre {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 200;
+}
+
+.footer__fond .footer__fond__icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__fond .footer__fond__icone .footer__fond__icone--icone {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.footer__fond .footer__fond--texte {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer__fond .footer__fond--lien {
+  color: #fff;
+}
+
+@media screen and (min-width: 428px) and (max-width: 1440px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .position__texte {
+    font-size: 1.2rem;
+  }
+  .position__logo {
+    font-size: 1.3rem;
+    margin-left: -10px;
+  }
+  .introduction__texte {
+    font-size: 1.6rem;
+  }
+  .introduction__sous-texte {
+    font-size: 1.1rem;
+    color: #3f3f3f;
+  }
+  .introduction__bouton {
+    height: 18px;
+  }
+  .introduction__bouton__texte {
+    font-size: 1rem;
+    color: white;
+  }
+  .fonctionnement__titre {
+    margin-bottom: -30px;
+    padding-left: 0px;
+  }
+  .fonctionnement__boite {
+    margin-top: 40px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #restaurants__fond__titre {
+    margin-bottom: -40px;
+    font-size: 1.6rem;
+  }
+  .restaurants__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 75px;
+    margin-top: 80px;
+    background-color: #f3f3f3;
+  }
+  .restaurants__fond__boite {
+    margin-top: 55px;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .restaurants__fond__boite:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 2560px) {
+  .introduction {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .position {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .restaurants__titre {
+    height: 75px;
+    margin-top: 80px;
+    background-color: #f3f3f3;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #restaurants__fond__titre {
+    margin-bottom: -20px;
+    margin-top: 0px;
+  }
+  .restaurants__fond {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0px;
+    min-width: 90%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .restaurants__fond__boite {
+    width: 35%;
+    max-width: 5000px;
+    min-width: 1px;
+    height: 275px;
+  }
+  .footer__fond {
+    width: 79.3%;
+    margin-left: 8.8%;
+    margin-right: 10%;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1026px) and (max-width: 2560px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+  .position {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .position__texte {
+    font-size: 1.4rem;
+  }
+  .position__logo {
+    font-size: 1.5rem;
+    margin-left: -10px;
+  }
+  .introduction {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .introduction__texte {
+    font-size: 1.8rem;
+  }
+  .introduction__sous-texte {
+    font-size: 1.3rem;
+    color: #3f3f3f;
+  }
+  .introduction__bouton {
+    height: 25px;
+    width: 259px;
+    border-radius: 35px;
+  }
+  .introduction__bouton__texte {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .fonctionnement {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  .fonctionnement__titre {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 1100px;
+  }
+  .fonctionnement__boite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 40px;
+    width: 25%;
+    max-width: 5000px;
+    min-width: 1px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .fonctionnement__boite__texte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+  }
+  #restaurants__fond__titre {
+    margin-bottom: -40px;
+  }
+  .restaurants__fond__boite {
+    max-width: 380px;
+  }
+  .footer__fond {
+    width: 73%;
+    margin-left: 12.5%;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1445px) and (max-width: 2563px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+  .position {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .position__texte {
+    font-size: 1.6rem;
+  }
+  .position__logo {
+    font-size: 1.7rem;
+  }
+  .introduction {
+    max-width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .introduction__texte {
+    font-size: 2rem;
+  }
+  .introduction__sous-texte {
+    font-size: 1.5rem;
+  }
+  .fonctionnement {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .fonctionnement__titre {
+    min-width: 1900px;
+    font-size: 1.3rem;
+  }
+  .fonctionnement__boite {
+    margin-right: 5%;
+    max-width: 400px;
+    min-width: 1px;
+    width: 24%;
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  #restaurants__fond__titre {
+    margin-bottom: -30px;
+  }
+  .restaurants__titre {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-size: 1.3rem;
+  }
+  .restaurants__fond {
+    margin-top: 0px;
+    min-width: 75%;
+    width: 75%;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+    padding-bottom: 100px;
+  }
+  .restaurants__fond__boite {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 35%;
+    max-width: 585px;
+    height: 350px;
+    margin-top: 75px;
+  }
+  .restaurants__fond__boite__nouveau {
+    right: 20px;
+    margin-top: 20px;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .restaurants__fond__boite__description__texte {
+    font-size: 1.4rem;
+  }
+  .restaurants__fond__boite__description--icone {
+    font-size: 2rem;
+  }
+  .footer__fond {
+    width: 52.4%;
+    margin-left: 23.2%;
+    margin-right: 10%;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+/*# sourceMappingURL=ohmyfood.css.map */

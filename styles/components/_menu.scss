@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: $color-fond-générale;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    padding-bottom: 50px;
+        &__restaurant {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 6%;
+            margin-right: 6%;
+            width: 88%;
+                &--titre {
+                    font-family: 'Shrikhand', cursive;
+                    font-size: 1.85rem;
+                    margin-top: 30px;
+                    margin-bottom: 0px;
+                }
+        }
+}
+
+.menu__coeur {
+    margin-top: 15px;
+    font-size: 1.85rem;
+}

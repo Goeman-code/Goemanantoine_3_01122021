@@ -1,0 +1,889 @@
+@charset "UTF-8";
+p, h2, h3, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1rem;
+  pointer-events: none;
+  margin-bottom: 8px;
+}
+
+.logo .logo__page {
+  height: 50px;
+}
+
+.logo__fleche {
+  position: absolute;
+  top: 2%;
+  left: 7%;
+  color: #3f3f3f;
+  font-size: 1.3rem;
+}
+
+.header__fond-0 {
+  width: 100%;
+  height: 280px;
+  background: no-repeat url("./images/A la française page.jpg");
+  background-size: cover;
+}
+
+.header__fond-1 {
+  width: 100%;
+  height: 280px;
+  background: no-repeat url("./images/La note enchantée.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__fond-2 {
+  width: 100%;
+  height: 280px;
+  background: no-repeat url("./images/La palette du goût.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__fond-3 {
+  width: 100%;
+  height: 280px;
+  background: no-repeat url("./images/Le délice des sens.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f3f3f3;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -50px;
+  padding-bottom: 50px;
+}
+
+.menu__restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 6%;
+  margin-right: 6%;
+  width: 88%;
+}
+
+.menu__restaurant--titre {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.85rem;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.menu__coeur {
+  margin-top: 15px;
+  font-size: 1.85rem;
+}
+
+.coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 20%;
+  font-size: 1.5rem;
+  z-index: 1;
+  background-image: linear-gradient(350deg, #9256dc 20%, #FF79DA 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.coeur--deux {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  color: #3f3f3f;
+  background-color: #fff;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.coeur--deux:hover {
+  opacity: 0;
+}
+
+.coeur__marge {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.coeur--deux--fond {
+  background-color: #f3f3f3;
+}
+
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 67px;
+  margin-left: 6%;
+  margin-top: 30px;
+}
+
+.plat__texte {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+
+.plat__ligne {
+  width: 60%;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 70px;
+  border-radius: 15px;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 15px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-animation: apparition-cartes 500ms 300ms both ease-out;
+          animation: apparition-cartes 500ms 300ms both ease-out;
+}
+
+.carte--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.carte--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.carte--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.carte--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.carte:hover .carte__texte {
+  min-width: 80%;
+}
+
+.carte:hover .carte__valide__check {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.carte__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 3%;
+  margin-left: 2%;
+  min-width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  /* &:hover {
+                    min-width: 80%;                   
+                }
+                &:hover + div > .carte__valide__check {
+                    transform: rotate(-360deg);
+                } */
+}
+
+.carte__texte__colonne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.carte__texte__plat {
+  font-size: 1.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.carte__texte__ingredients {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.carte__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 600;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+.carte__valide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 80px;
+  background-color: #99E2D0;
+}
+
+.carte__valide__check {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes apparition-cartes {
+  0% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-cartes {
+  0% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.boite__bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.introduction__bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+  color: white;
+  background-image: linear-gradient(350deg, #9256dc 20%, #FF79DA 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  position: relative;
+  z-index: 1;
+}
+
+.introduction__bouton:hover .introduction__bouton__fond {
+  opacity: 1;
+}
+
+.introduction__bouton__texte {
+  color: white;
+}
+
+.introduction__bouton__fond {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(350deg, #9256dc 10%, #FF79DA 80%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.footer__fond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3f3f3f;
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.footer__fond #footer__fond__titre {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 200;
+}
+
+.footer__fond .footer__fond__icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__fond .footer__fond__icone .footer__fond__icone--icone {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.footer__fond .footer__fond--texte {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer__fond .footer__fond--lien {
+  color: #fff;
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+  .logo__fleche {
+    top: 3.2%;
+  }
+  .menu__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 6%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .menu__restaurant--titre {
+    font-size: 2.3rem;
+  }
+  .enchante {
+    font-size: 2.1rem;
+  }
+  .coeur {
+    font-size: 1.8rem;
+  }
+  .carte {
+    width: 80%;
+    height: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .carte__texte__plat {
+    font-size: 1.4rem;
+  }
+  .carte__texte__ingredients {
+    font-size: 1.2rem;
+  }
+  .carte__prix {
+    font-size: 1.2rem;
+  }
+  .carte__valide__check {
+    font-size: 1.9rem;
+  }
+  .plat {
+    margin-left: 11%;
+  }
+  .plat__texte {
+    font-size: 1.1rem;
+  }
+  .plat__ligne {
+    height: 4px;
+  }
+  .boite__bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .introduction__bouton {
+    height: 22px;
+  }
+  .introduction__bouton__texte {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .footer__fond #footer__fond__titre {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__fond .footer__fond__icone--icone {
+    font-size: 1.1rem;
+  }
+  .footer__fond .footer__fond--texte {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .header__fond-0 {
+    background: no-repeat url("./images/A la française laptop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    max-width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .header__fond-1 {
+    height: 400px;
+    background: no-repeat url("./images/La note enchantée.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .header__fond-2 {
+    height: 400px;
+    background: no-repeat url("./images/La palette du goût.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .header__fond-3 {
+    width: 100%;
+    height: 400px;
+    background: no-repeat url("./images/Le délice des sens.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .menu {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    max-width: 880px;
+  }
+  .menu__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 6%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .menu__restaurant--titre {
+    font-size: 2.3rem;
+  }
+  .footer__fond {
+    max-width: 880px;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 81%;
+  }
+  .footer__fond #footer__fond__titre {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__fond .footer__fond__icone--icone {
+    font-size: 1.1rem;
+  }
+  .footer__fond .footer__fond--texte {
+    font-size: 1.2rem;
+  }
+  .logo__fleche {
+    top: 3.2%;
+    left: 8.6%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+  .logo__fleche {
+    top: 3.7%;
+    left: 14.6%;
+  }
+  .header__fond-0 {
+    background: no-repeat url("./images/A la française.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header__fond-1 {
+    background: no-repeat url("./images/La note enchantée.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header__fond-2 {
+    height: 520px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header__fond-3 {
+    height: 520px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .menu {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+  }
+  .menu__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 3%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .menu__restaurant--titre {
+    font-size: 2.8rem;
+  }
+  .coeur {
+    font-size: 2rem;
+  }
+  .plat {
+    margin-left: 13%;
+  }
+  .plat__texte {
+    font-size: 1.3rem;
+  }
+  .carte {
+    width: 75%;
+    height: 140px;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+  }
+  .carte__texte__plat {
+    font-size: 1.8rem;
+  }
+  .carte__texte__ingredients {
+    font-size: 1.6rem;
+  }
+  .carte__prix {
+    font-size: 1.6rem;
+  }
+  .carte__valide {
+    width: 160px;
+  }
+  .carte__valide__check {
+    font-size: 2.4rem;
+  }
+  .introduction__bouton {
+    height: 28px;
+    width: 25%;
+    border-radius: 35px;
+  }
+  .introduction__bouton__texte {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .footer__fond {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 88%;
+  }
+  .footer__fond #footer__fond__titre {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__fond .footer__fond__icone--icone {
+    font-size: 1.1rem;
+  }
+  .footer__fond .footer__fond--texte {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .logo__fleche {
+    top: 4.3%;
+    left: 11.6%;
+    font-size: 2rem;
+  }
+  .header__fond-0 {
+    background: no-repeat url("./images/A la française.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header__fond-1 {
+    background: no-repeat url("./images/La note enchantée.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header__fond-2 {
+    height: 600px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header__fond-3 {
+    height: 600px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+  }
+  .menu__restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 6%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .menu__restaurant--titre {
+    font-size: 4rem;
+  }
+  .coeur {
+    font-size: 3.2rem;
+    margin-bottom: 13px;
+  }
+  .plat {
+    margin-left: 13%;
+  }
+  .plat__texte {
+    font-size: 2.2rem;
+  }
+  .plat__ligne {
+    height: 6px;
+    width: 99%;
+  }
+  .carte {
+    width: 75%;
+    height: 180px;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+  }
+  .carte__texte__plat {
+    font-size: 2.2rem;
+  }
+  .carte__texte__ingredients {
+    font-size: 2rem;
+  }
+  .carte__prix {
+    font-size: 2rem;
+  }
+  .carte__valide {
+    width: 160px;
+  }
+  .carte__valide__check {
+    font-size: 2.4rem;
+  }
+  .introduction__bouton {
+    height: 60px;
+    width: 25%;
+    border-radius: 70px;
+  }
+  .introduction__bouton__texte {
+    font-size: 2rem;
+    color: white;
+  }
+  .introduction__bouton__fond {
+    border-radius: 70px;
+  }
+  .footer__fond {
+    max-width: 79%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 88%;
+  }
+  .footer__fond #footer__fond__titre {
+    font-size: 2.4rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .footer__fond .footer__fond__icone--icone {
+    font-size: 2.1rem;
+  }
+  .footer__fond .footer__fond--texte {
+    font-size: 2.2rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+/*# sourceMappingURL=ohmyfoodpage.css.map */

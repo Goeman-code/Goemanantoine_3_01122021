@@ -1,0 +1,29 @@
+.footer__fond {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-icone-header;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    color: $color-blanc;
+        #footer__fond__titre {
+            font-family: 'Shrikhand', cursive;
+            font-weight: 200;
+        }
+        .footer__fond__icone {
+            display: flex;
+            flex-direction: row;
+                .footer__fond__icone--icone {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                }
+        }
+        .footer__fond--texte {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .footer__fond--lien {
+            color: $color-blanc;
+        }
+}

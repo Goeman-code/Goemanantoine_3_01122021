@@ -1,0 +1,56 @@
+.chargement {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: $color-blanc;
+    animation: fondu 300ms 2200ms both;
+    z-index: -1;
+        .chargement__icone {
+            position: fixed;
+            font-size: 10rem;
+            animation: icone-chargement 2050ms 200ms both infinite cubic-bezier(.51,.21,0,1.02) alternate;
+            pointer-events: none;
+        }
+}
+
+.opacité {
+    animation: body 300ms 2300ms both;
+}
+
+@keyframes icone-chargement {
+    0% {
+        transform: scale(0) rotate(360deg);
+        color: black;
+    }
+    30% {
+        color: $couleur-secondaire;
+    }
+    60% {
+        color: $couleur-tertiaire;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        color: $couleur-primaire;
+    }
+}
+
+@keyframes fondu {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes body {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,45 @@
+.boite__bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.introduction__bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(350deg, $couleur-primaire 20%, $couleur-secondaire 100%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        & .introduction__bouton__fond {
+            opacity: 1;
+        }
+    }
+    &__texte {
+        color: white;
+    }
+    &__fond {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 25px;
+    background-image: linear-gradient(350deg, $couleur-primaire 10%, $couleur-secondaire 80%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: opacity 250ms;
+    }
+}

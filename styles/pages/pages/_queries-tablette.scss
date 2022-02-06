@@ -1,0 +1,419 @@
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+    .logo__fleche {
+        top: 3.2%;
+    }
+    .menu {
+            &__restaurant {
+                display: flex;
+                justify-content: center;
+                margin-left: 6%;
+                margin-right: 0%;
+                width: 100%;
+                &--titre {
+                    font-size: 2.3rem;
+                }
+            }
+    }
+    .enchante {
+        font-size: 2.1rem;
+    }
+    .coeur {
+        font-size: 1.8rem;
+    }
+
+    .carte {
+        width: 80%;
+        height: 100px;
+        margin-right: 10%;
+        margin-left: 10%;
+            &__texte {
+                    &__plat {
+                        font-size: 1.4rem;
+                    }
+                    &__ingredients {
+                        font-size: 1.2rem;
+                    }
+            }
+            &__prix {
+                font-size: 1.2rem;
+            }
+                &__valide {
+                    &__check {
+                        font-size: 1.9rem;
+                    }
+                }
+    }
+
+    .plat {
+        margin-left: 11%;
+            &__texte {
+                font-size: 1.1rem;
+            }
+            &__ligne {
+                height: 4px;
+            }
+    }
+
+    .boite__bouton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .introduction__bouton {
+        height: 22px;
+        &__texte {
+            font-size: 1.3rem;
+            color: white;
+        }
+    }
+
+    .footer__fond {
+            #footer__fond__titre {
+                font-size: 1.4rem;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+                    .footer__fond__icone--icone {
+                        font-size: 1.1rem;
+                    }
+            .footer__fond--texte {
+                font-size: 1.2rem;
+            }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .header__fond-0 {
+        background: no-repeat url("./images/A\ la\ française\ laptop.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        max-width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .header__fond-1 {
+        height: 400px;
+        background: no-repeat url("./images/La\ note\ enchantée.jpg");
+        background-size: cover;
+        background-position: center;
+        max-width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .header__fond-2 {
+        height: 400px;
+        background: no-repeat url("./images/La\ palette\ du\ goût.jpg");
+        background-size: cover;
+        background-position: center;
+        max-width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .header__fond-3 {
+        width: 100%;
+        height: 400px;
+        background: no-repeat url("./images/Le\ délice\ des\ sens.jpg");
+        background-size: cover;
+        background-position: center;
+        max-width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
+    .menu {
+        align-self: center;
+        margin-left: 8%;
+        margin-right: 8%;
+        max-width: 880px;
+            &__restaurant {
+                display: flex;
+                justify-content: center;
+                margin-left: 6%;
+                margin-right: 0%;
+                width: 100%;
+                &--titre {
+                    font-size: 2.3rem;
+                }
+            }
+    }
+    .footer__fond {
+        max-width: 880px;
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 81%;
+        #footer__fond__titre {
+            font-size: 1.4rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+                .footer__fond__icone--icone {
+                    font-size: 1.1rem;
+                }
+        .footer__fond--texte {
+            font-size: 1.2rem;
+        }
+    }
+    .logo__fleche {
+        top: 3.2%;
+        left: 8.6%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+    .logo {
+        font-size: 1.6rem;
+    }
+    .logo__fleche {
+        top: 3.7%;
+        left: 14.6%;
+    }
+
+    .header__fond-0 {
+        background: no-repeat url("./images/A\ la\ française.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 520px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .header__fond-1 {
+        background: no-repeat url("./images/La\ note\ enchantée.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 520px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .header__fond-2 {
+        height: 520px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .header__fond-3 {
+        height: 520px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+
+    .menu {
+        align-self: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+            &__restaurant {
+                display: flex;
+                justify-content: center;
+                margin-left: 3%;
+                margin-right: 0%;
+                width: 100%;
+                &--titre {
+                    font-size: 2.8rem;
+                }
+            }
+    }
+    .coeur {
+        font-size: 2rem;
+    }
+
+    .plat {
+        margin-left: 13%;
+            &__texte {
+                font-size: 1.3rem;
+            }
+    }
+
+    .carte {
+        width: 75%;
+        height: 140px;
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+            &__texte {
+                    &__plat {
+                        font-size: 1.8rem;
+                    }
+                    &__ingredients {
+                        font-size: 1.6rem;
+                    }
+            }
+            &__prix {
+                font-size: 1.6rem;
+            }
+                &__valide {
+                    width: 160px;
+                    &__check {
+                        font-size: 2.4rem;
+                    }
+                }
+    }
+
+    .introduction__bouton {
+        height: 28px;
+        width: 25%;
+        border-radius: 35px;
+        &__texte {
+            font-size: 1.3rem;
+            color: white;
+        }
+    }
+
+    .footer__fond {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 88%;
+        #footer__fond__titre {
+            font-size: 1.4rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+                .footer__fond__icone--icone {
+                    font-size: 1.1rem;
+                }
+        .footer__fond--texte {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .logo__fleche {
+        top: 4.3%;
+        left: 11.6%;
+        font-size: 2rem;
+    }
+
+    .header__fond-0 {
+        background: no-repeat url("./images/A\ la\ française.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .header__fond-1 {
+        background: no-repeat url("./images/La\ note\ enchantée.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .header__fond-2 {
+        height: 600px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .header__fond-3 {
+        height: 600px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .menu {
+        align-self: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+            &__restaurant {
+                display: flex;
+                justify-content: center;
+                margin-left: 6%;
+                margin-right: 0%;
+                width: 100%;
+                &--titre {
+                    font-size: 4rem;
+                }
+            }
+    }
+    .coeur {
+        font-size: 3.2rem;
+        margin-bottom: 13px;
+    }
+
+    .plat {
+        margin-left: 13%;
+            &__texte {
+                font-size: 2.2rem;
+            }
+            &__ligne {
+                height: 6px;
+                width: 99%;
+            }
+    }
+
+    .carte {
+        width: 75%;
+        height: 180px;
+        margin-right: 12.5%;
+        margin-left: 12.5%;
+            &__texte {
+                    &__plat {
+                        font-size: 2.2rem;
+                    }
+                    &__ingredients {
+                        font-size: 2rem;
+                    }
+            }
+            &__prix {
+                font-size: 2rem;
+            }
+                &__valide {
+                    width: 160px;
+                    &__check {
+                        font-size: 2.4rem;
+                    }
+                }
+    }
+
+    .introduction__bouton {
+        height: 60px;
+        width: 25%;
+        border-radius: 70px;
+        &__texte {
+            font-size: 2rem;
+            color: white;
+        }
+        &__fond {
+            border-radius: 70px;
+            }
+    }
+
+    .footer__fond {
+        max-width: 79%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 88%;
+        #footer__fond__titre {
+            font-size: 2.4rem;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+                .footer__fond__icone--icone {
+                    font-size: 2.1rem;
+                }
+        .footer__fond--texte {
+            font-size: 2.2rem;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.coeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    font-size: 1.5rem;
+    z-index: 1;
+    background-image: linear-gradient(350deg, $couleur-primaire 20%, $couleur-secondaire 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+    transition: opacity 250ms;
+    &--deux {
+        position: absolute;
+        z-index: 2;
+        opacity: 1;
+        color: $color-icone-header;
+        background-color: $color-blanc;
+        transition: opacity 250ms;
+            &:hover {
+                opacity: 0;
+            }
+    }
+}
+
+.coeur__marge {
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+
+.coeur--deux--fond {
+    background-color: $color-fond-générale;
+}
